@@ -1,0 +1,2 @@
+6a96f4d77f87061ed26e86587c6ac53ae70f43049aa2fd2c3efccfa958671c55  HP_LayoutPro_v3.4.0-rc1.rbz
+de1a2e7e8d4be1cca51ecaa62bb5311308b8b8e7bd20a29ce3bec999c739d7fe  HUONG_DAN_3.4.0-rc1.md
