@@ -1,0 +1,3 @@
+43e5852fce5dedc1ae12b306da4a05348bc6e8fc6502cdfd3b10ca02acb7e70e  BAO_CAO_3.6.1-rc1.md
+3d761306e7a51982dcbe8920d3c26fe817a3584b698c0d5ffbde0f1d724cdd6c  HP_LayoutPro_v3.6.1-rc1.rbz
+d8eaaaac6673ff7d949cf8a11ed5cd559b445e705f23836e1635c2a8a7277fe5  HUONG_DAN_3.6.1-rc1.md
