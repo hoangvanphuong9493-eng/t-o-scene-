@@ -16,7 +16,7 @@ Vào **⚙ → Post / Máy CNC**, chọn **Thêm post / Nhân bản post / Xóa 
 
 **Thư viện dao** và **Layer ngoài** dùng danh sách bên trái, biểu mẫu bên phải; có Thêm/Nhân bản/Xóa. Dao có số, tên, loại phay ngón/V, góc, đường kính, feed, vòng quay, lệnh đổi/mở/tắt, cờ khoan và lựa chọn dao cắt biên. Dao V được lưu trong thư viện; CAM chưa hỗ trợ gia công theo góc V. Layer có loại đối tượng, dao và đường kính tối đa, công thức độ sâu `pt`, lượt cắt và kiểu cắt. Layer ở đây là **khai báo gia công**, không xóa hình học trong model.
 
-Giữ ít nhất một post. Muốn xóa dao cắt biên, chọn dao cắt biên khác trước; muốn xóa dao đang gán cho layer, đổi dao của layer trước. Tên/số trùng, dao thiếu và công thức không hợp lệ được báo trong cửa sổ cài đặt; cấu hình đã lưu không bị thay bằng bản lỗi. Đóng cửa sổ khi chưa Lưu sẽ bỏ bản nháp.
+Giữ ít nhất một post. Muốn xóa dao cắt biên, chọn dao cắt biên khác trước; muốn xóa dao đang gán cho layer, đổi dao của layer trước. Tên/số trùng, dao thiếu và công thức không hợp lệ được báo trong cửa sổ cài đặt; cấu hình đã lưu không bị thay bằng bản lỗi. Nhập một bộ cài đặt có lỗi cũng giữ nguyên phương án đang chỉnh. Đóng cửa sổ khi chưa Lưu sẽ bỏ bản nháp.
 
 **Xuất/Nhập cài đặt** và công trình .data lưu cả thư viện post. Chỉ đổi feed/vòng quay/mã chương trình sẽ giữ bố trí và yêu cầu tạo lại NC. Đổi dao, khai báo layer hoặc khổ xếp có thể cần đọc lại model và xếp lại; giao diện báo rõ. Quy ước NC hiện được hỗ trợ là X âm từ dưới phải, Y dương, Z0 bàn máy; thêm post không tự thay đổi quy ước tọa độ.
 
