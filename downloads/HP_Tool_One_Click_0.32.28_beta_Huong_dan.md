@@ -13,7 +13,13 @@ Bản 0.32.27 có thể tự tạo các vòng đánh dấu lỗi/cảnh báo th�
 
 Khi model đã mở, chọn **Extensions → HP Tool: xóa dấu lỗi cũ làm nặng model**, hoặc nút **Xóa dấu lỗi cũ** trong cửa sổ HP Tool. Lệnh chỉ xóa các nhóm mà HP Tool đã gắn thuộc tính `issue_marker`; không tự dọn component, vật liệu hoặc nhóm của công trình. Có thể Hoàn tác. Plugin không tự lưu đè model; dùng **Save As / Lưu thành** để so sánh file đã dọn với file gốc.
 
-Bản mới vẽ dấu lỗi bằng **SketchUp Overlay** trên SketchUp 2023 trở lên: chỉ hiển thị tạm trong viewport, không tạo entity, vật liệu, tag hoặc thao tác Undo khi đánh dấu. Hiển thị giới hạn 256 vòng và 80 nhãn để tránh quá tải; danh sách lỗi, ID và vị trí trên sơ đồ/mô phỏng vẫn giữ đầy đủ. Đóng cửa sổ, bỏ tích đánh dấu hoặc chuyển model sẽ xóa lớp tạm. Với bản SketchUp không có API Overlay, dùng dấu trên sơ đồ và mô phỏng.
+Khi bạn chủ động bật, bản mới vẽ dấu lỗi bằng **SketchUp Overlay** trên SketchUp 2023 trở lên: chỉ hiển thị tạm trong viewport, không tạo entity, vật liệu, tag hoặc thao tác Undo khi đánh dấu. Hiển thị giới hạn 256 vòng và 80 nhãn để tránh quá tải; danh sách lỗi, ID và vị trí trên sơ đồ/mô phỏng vẫn giữ đầy đủ. Đóng cửa sổ, bỏ tích Hiện dấu tạm trong SketchUp hoặc chuyển model sẽ xóa lớp tạm. Với bản SketchUp không có API Overlay, dùng dấu trên sơ đồ và mô phỏng.
+
+## Khởi động nhẹ khi dùng SketchUp bình thường
+
+Bản sửa tách bộ nạp nhỏ khỏi bộ xử lý. Khi SketchUp khởi động hoặc mở `.skp`, HP Tool chỉ đăng ký menu/thanh công cụ. Bộ đọc model, CAM, cài đặt, cửa sổ HTML, worker và observer quản lý tác vụ chỉ nạp sau khi bạn bấm mở HP Tool hoặc lệnh dọn dấu. Không có tác vụ nền của HP Tool chạy khi bạn chưa dùng plugin trong phiên đó.
+
+**Hiện dấu tạm trong SketchUp** mặc định tắt; bật khi cần kiểm tra vị trí lỗi. Dấu trên sơ đồ và mô phỏng vẫn dùng như trước. Đây là cấu hình giảm tải viewport, phù hợp trường hợp máy đơ khi thao tác SketchUp thông thường.
 
 ## Tác vụ nền và việc chuyển model
 
