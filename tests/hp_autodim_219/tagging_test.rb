@@ -60,7 +60,7 @@ module HP
     def self.save_sets(model, sets); model.sets = sets; end
   end
 end
-load File.expand_path('../../src/hp_auto_dim_2.19.0/hp_auto_dim/tagging.rb', __dir__)
+load File.expand_path("../../src/hp_auto_dim_#{ENV.fetch('HP_AUTODIM_TEST_VERSION', '2.19.0')}/hp_auto_dim/tagging.rb", __dir__)
 def assert(value); raise 'Assertion failed' unless value; end
 hp = HP::AutoDim
 model = Model.new

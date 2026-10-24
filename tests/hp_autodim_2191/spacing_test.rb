@@ -32,7 +32,7 @@ module HP
     def self.current_pgid(model); 1; end
   end
 end
-load File.expand_path('../../src/hp_auto_dim_2.19.1/hp_auto_dim/spacing.rb', __dir__)
+load File.expand_path("../../src/hp_auto_dim_#{ENV.fetch('HP_AUTODIM_TEST_VERSION', '2.19.1')}/hp_auto_dim/spacing.rb", __dir__)
 def close(a, b); raise "#{a} != #{b}" unless (a-b).abs < 0.00001; end
 hp = HP::AutoDim
 ref, axis, direction = V.new(0,0), V.new(1,0), V.new(0,1)
