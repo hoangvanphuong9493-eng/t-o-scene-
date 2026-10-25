@@ -37,7 +37,7 @@ end
 def load_plugin_for_geometry(path)
   module_source="module HP;module AutoDim;PLUGIN_ID='HP_AutoDim';end;end"
   Object.class_eval(module_source)
-  %w[tracking interaction scheduler rendering tagging spacing anchors live_geometry verification].each do |name|
+  %w[tracking interaction scheduler rendering tagging spacing anchors live_geometry verification recovery].each do |name|
     file=File.join(path,"#{name}.rb");next unless File.exist?(file)
     code=File.read(file).lines.reject{|line|line.start_with?('require ')}.join
     Object.class_eval(code,file)
