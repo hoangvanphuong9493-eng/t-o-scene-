@@ -1,4 +1,4 @@
-# Synthetic cabinet, not the user's uploaded model. Run with Ruby 3.2+.
+# Synthetic cabinet, not the user's uploaded model. Run with Ruby 2.7+.
 require_relative 'model_fixture'
 require_relative 'render_api'
 load_plugin_for_geometry(ARGV[0] || File.expand_path('../../src/hp_auto_dim_2.19.3-rc1/hp_auto_dim',__dir__))

@@ -41,9 +41,9 @@ hoặc có cùng số cũ nghĩa là đã cập nhật đúng.
 | Render lỗi, khôi phục in-place, thử lại | Đạt với lỗi chèn chủ động | Chưa thử lỗi native thực tế |
 | Tag folder, tag loại/scene, chuyển tag rõ ràng | Đạt kiểm tra hồi quy | Chưa chạy Page transition native |
 | Khoảng cách hàng 120 mm, DIM tay, xem trước cache | Đạt kiểm tra hồi quy | Chưa nghiệm thu thao tác chuột native |
-| Cú pháp Ruby và ZIP RBZ | Đạt | Runtime kiểm tra Ruby 3.2.6 |
+| Cú pháp Ruby và ZIP RBZ | Đạt | Runtime kiểm tra Ruby 2.7.8 và 3.2.6 |
 
-Lệnh chạy với Ruby 3.2+:
+Lệnh chạy với Ruby 2.7+:
 
 ```sh
 ruby tests/hp_autodim_2193/regression_test.rb
@@ -58,8 +58,9 @@ tra giữ DIM cũ/khôi phục/thử lại, không phải kết quả thất b�
 
 Chưa có SketchUp để chạy cài RBZ, mouse/input points, observer/timer native,
 Undo/Redo, lưu/mở lại, scene animation, plugin Fuji thật hoặc model lớn.
-Chưa chạy runtime Ruby 2.7 của SketchUp 2023; bước tải runtime bị cơ chế duyệt tự
-động từ chối thực hiện do hết hạn mức, không phải kết luận tải đó không an toàn.
+Đã chạy thêm toàn bộ kiểm tra và đối chiếu hình học riêng trên Ruby 2.7.8
+ngoài Ruby 3.2.6, đều đạt. Đây là kiểm tra runtime Ruby độc lập, không phải
+nghiệm thu native trong SketchUp 2023.
 
 Bài `tests/hp_autodim_2193/sketchup_native_smoke.rb` đã kiểm tra cú pháp nhưng
 **chưa chạy**. Bài này chỉ cho chạy trong model mới hoàn toàn trống, để lại một

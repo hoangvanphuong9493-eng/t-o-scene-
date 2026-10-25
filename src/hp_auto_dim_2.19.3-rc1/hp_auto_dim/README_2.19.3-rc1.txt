@@ -59,7 +59,8 @@ bộ nhớ đệm, Scale/di chuyển/xoay, cánh/lỗ về 0 rồi thêm lại, 
 lỗi vẽ/khôi phục/thử lại, observer scene, xem trước lưu cache và raytest.
 Có thêm kiểm tra số đo trên hình học trích từ model mẫu của người dùng;
 model mẫu và hình học riêng không đưa vào gói hoặc kho mã công khai.
-Kiểm tra cú pháp Ruby, hồi quy Tags, khoảng cách hàng, ZIP và API stubs.
+Các bộ kiểm tra đạt trên Ruby 2.7.8 và 3.2.6; kiểm tra cú pháp Ruby, hồi quy
+Tags, khoảng cách hàng, ZIP và API stubs.
 
 CHƯA XÁC NHẬN:
 Chưa chạy SketchUp thật nên chưa nghiệm thu cài RBZ, thao tác chuột/bắt
